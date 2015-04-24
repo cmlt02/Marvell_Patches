@@ -1,12 +1,15 @@
 Marvell_Patches
 ===============
 
+
 --------------------------------------------------------------
-How to add these patches in mi repo? you need add this in local_manifest.xml
+
+How to add these patches in my repo? you need add this in local_manifest.xml
 
       <project path="patches" name="Epirex/Marvell_Patches" revision="master" remote="github" />
 
 --------------------------------------------------------------
+
 To apply patches:
 
       REPO_BRANCH="cm-11.0" DEVICE="degaswifi" patches/cherry-pick.sh
