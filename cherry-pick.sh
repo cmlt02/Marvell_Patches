@@ -27,7 +27,7 @@ fi
 if [ "$REPO_BRANCH" = "cm-11.0" ] || [ "$DEVICE" = "degaswifi" ]
 then
   echo -e $CL_BLU"Cherrypicking multimedia patches - merge changes from 4.3.1 branch"$CL_RST
-  cd hardware/libhardware
+  cd system/core
   git fetch https://github.com/suyouxin/android_system_core android-5.0.0-xo4
   git cherry-pick 190deefb0918a0d2e22406cc4b34fb16aec32b9e
   cd ../..
