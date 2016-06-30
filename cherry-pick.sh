@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$REPO_BRANCH" = "cm-11.0" ] || [ "$DEVICE" = "degaswifi" ]
+if [ "$REPO_BRANCH" = "creeper-1.0" ] || [ "$DEVICE" = "lt02wifi" ]
 then
   echo -e $CL_BLU"Cherrypicking EGL patches - Merge changes from 4.3.1 which enables HWC and EGL"$CL_RST
   cd frameworks/native
@@ -15,7 +15,7 @@ then
   cd ../..
 fi
 
-if [ "$REPO_BRANCH" = "cm-11.0" ] || [ "$DEVICE" = "degaswifi" ]
+if [ "$REPO_BRANCH" = "creeper-1.0" ] || [ "$DEVICE" = "lt02wifi" ]
 then
   echo -e $CL_BLU"Cherrypicking libhardware patches - bring in Marvell extension for HWC"$CL_RST
   cd hardware/libhardware
@@ -24,7 +24,7 @@ then
   cd ../..
 fi
 
-if [ "$REPO_BRANCH" = "cm-11.0" ] || [ "$DEVICE" = "degaswifi" ]
+if [ "$REPO_BRANCH" = "creeper-1.0" ] || [ "$DEVICE" = "lt02wifi" ]
 then
   echo -e $CL_BLU"Cherrypicking multimedia patches - merge changes from 4.3.1 branch"$CL_RST
   cd system/core
